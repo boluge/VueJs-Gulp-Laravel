@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var webpack = require('webpack-stream');
+var browserSync = require('browser-sync').create();
 var batch = require('gulp-batch');
 var connect = require('gulp-connect');
 var uglify = require('gulp-uglify');
@@ -53,9 +54,15 @@ gulp.task('uglify', function() {
 });
 
 // Run the webserver
-gulp.task('server', function() {
+gulp.task('serve', function() {
 
+    browserSync.init({
+        server: "./public"
+    });
+
+    gulp.watch("public/js/app.js", ['lint', 'uglify']);
+    gulp.watch(['public/**/*.*']).on('change', browserSync.reload);
 });
 
 // Default task
-gulp.task('default', ['webpack', 'uglify']);
+gulp.task('default', ['webpack', 'uglify', 'serve']);

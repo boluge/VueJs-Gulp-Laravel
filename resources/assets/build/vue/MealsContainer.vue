@@ -1,17 +1,3 @@
-<style>
-.mealslist {
-  margin: 10px 30px;
-  background: #455A64;
-  padding: 5px 15px;
-  border-radius: 6px;
-  color: #fff;
-}
-.json {
-  margin: 40px;
-  color: #455A64;
-}
-</style>
-
 <template>
   <div class="mealslist" v-for="meal in meals">
     <meal v-bind:name="meal.name" v-bind:sugar="meal.blood_sugar" v-bind:created="meal.created_at"></meal>
