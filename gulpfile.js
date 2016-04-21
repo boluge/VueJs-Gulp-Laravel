@@ -6,8 +6,8 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var eslint = require('gulp-eslint');
 var reporter = require('eslint-html-reporter');
-var path     = require('path');
-var fs       = require('fs');
+var path = require('path');
+var fs = require('fs');
 
 // Run webpack
 gulp.task('webpack', ['lint'], function(){
