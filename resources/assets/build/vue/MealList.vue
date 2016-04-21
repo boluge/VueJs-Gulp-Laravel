@@ -50,8 +50,6 @@
     <h2>{{name}}</h2>
     <p class="date">Le {{creation}}</p>
   </div>
-
-  <!--<meal name="{{meal.name}}" sugar="{{meal.blood_sugar}}" created="{{meal.created_at}}"></meal>-->
 </template>
 
 <script>

@@ -16,6 +16,7 @@
   <div class="mealslist" v-for="meal in meals">
     <meal v-bind:name="meal.name" v-bind:sugar="meal.blood_sugar" v-bind:created="meal.created_at"></meal>
   </div>
+  <!--<p>{{meals | json 2}}</p>-->
 </template>
 
 <script>

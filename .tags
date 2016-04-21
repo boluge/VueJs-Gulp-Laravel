@@ -1,0 +1,14 @@
+gulp	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/gulpfile.js	/^var gulp = require('gulp');$/;"	variable	line:1
+webpack	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/gulpfile.js	/^var webpack = require('webpack-stream');$/;"	variable	line:2
+batch	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/gulpfile.js	/^var batch = require('gulp-batch');$/;"	variable	line:3
+connect	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/gulpfile.js	/^var connect = require('gulp-connect');$/;"	variable	line:4
+html	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^<html lang="fr">$/;"	function	line:2
+head	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^<head>$/;"	function	line:3
+meta	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <meta charset="UTF-8">$/;"	function	line:4
+title	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <title>Vue.js Gulp config for Laravel<\/title>$/;"	function	line:5
+link	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <link rel="icon" href="http:\/\/www.w3schools.com\/favicon.ico" type="image\/x-icon">$/;"	function	line:6
+style	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <style media="tv">$/;"	function	line:7
+body	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^<body>$/;"	function	line:11
+a	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <a href="json\/meals.json">Liens vers le fichier json<\/a>$/;"	function	line:12
+mealscontainer	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <mealscontainer json="json\/meals.json"><\/mealscontainer>$/;"	function	line:13
+script	/Applications/MAMP/htdocs/VueJs/VueJs-Gulp-Laravel/public/index.html	/^  <script src="js\/app.js"><\/script>$/;"	function	line:14
