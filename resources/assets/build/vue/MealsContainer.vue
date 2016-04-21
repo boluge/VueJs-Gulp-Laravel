@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import MealComponent from './MealList'
+  import MealComponent from './MealList.vue'
   export default {
     components: {
       'meal': MealComponent

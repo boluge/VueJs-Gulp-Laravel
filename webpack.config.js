@@ -6,7 +6,7 @@ module.exports =  {
   ],
   output: {
     path: "/public/js",
-    publicPath: "/public/",
+    publicPath: "/",
     filename: "app.js"
   },
   watch: true,
