@@ -1,0 +1,19 @@
+{
+  "name": "vuejsgulplaravel",
+  "version": "1.0.0",
+  "description": "VueJs-Gulp-Laravel # VueJs-Gulp-Laravel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boluge/VueJs-Gulp-Laravel.git"
+  },
+  "author": "Boluge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boluge/VueJs-Gulp-Laravel/issues"
+  },
+  "homepage": "https://github.com/boluge/VueJs-Gulp-Laravel#readme"
+}
