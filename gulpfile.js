@@ -3,6 +3,7 @@ var webpack = require('webpack-stream');
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
 var connect = require('gulp-connect');
+var copy = require('gulp-copy');
 
 // Run webpack
 gulp.task('webpack', function(){
