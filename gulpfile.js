@@ -7,9 +7,9 @@ var copy = require('gulp-copy');
 
 // Run webpack
 gulp.task('webpack', function(){
-  return gulp.src('resources/assets/build/main.js')
+  return gulp.src('./resources/assets/build/main.js')
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest('dist/js/'))
+    .pipe(gulp.dest('./public/js'))
     .pipe(connect.reload());
 });
 
