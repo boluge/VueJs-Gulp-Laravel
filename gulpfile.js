@@ -39,8 +39,8 @@ gulp.task('lint', function () {
         }))
         .pipe(eslint.format(reporter, function(results) {
           fs.writeFileSync(path.join('./public/js/', 'report-results.html'), results);
-        }));
-        // .pipe(eslint.failAfterError());
+        }))
+        .pipe(eslint.failAfterError());
 });
 
 gulp.task('uglify', function() {
