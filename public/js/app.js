@@ -12142,7 +12142,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.mealslist {\n  margin: 30px;\n  background: #607D8B;\n  padding: 5px 15px;\n  border-radius: 6px;\n  color: #fff;\n}\n.json {\n  margin: 40px;\n  color: #455A64;\n}\n", ""]);
+	exports.push([module.id, "\n.mealslist {\n  margin: 10px 30px;\n  background: #455A64;\n  padding: 5px 15px;\n  border-radius: 6px;\n  color: #fff;\n}\n.json {\n  margin: 40px;\n  color: #455A64;\n}\n", ""]);
 
 	// exports
 
@@ -12410,8 +12410,8 @@
 	// </script>
 	// <style>
 	// .mealslist {
-	//   margin: 30px;
-	//   background: #607D8B;
+	//   margin: 10px 30px;
+	//   background: #455A64;
 	//   padding: 5px 15px;
 	//   border-radius: 6px;
 	//   color: #fff;
@@ -12495,7 +12495,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.mealslist {\n  margin: 30px;\n  background: #455A64;\n  padding: 10px\n}\n h2 {\n   color: #fff;\n   font-size: 16px;\n   margin: 10px;\n   margin-left: 55px;\n }\n .meal {\n   position: relative;\n }\n .date {\n   margin-left: 55px;\n }\n .glycemie {\n   position: absolute;\n   color: #333;\n   left: 0;\n   top: 50%;\n   margin-top: -19px;\n   line-height: 38px;\n   text-align: center;\n   font-size: 12px;\n   display: block;\n   height: 38px;\n   width: 38px;\n   border-radius: 50%;\n }\n .sugar-hypo {\n   background: #4FC3F7;\n }\n .sugar-normal {\n   background: #9CCC65;\n }\n .sugar-warning {\n   background: #FFC107;\n }\n .sugar-hyper {\n   background: #E57373;\n }\n", ""]);
+	exports.push([module.id, "\nh2 {\n  color: #fff;\n  font-size: 16px;\n  margin: 10px;\n  margin-left: 55px;\n}\n.meal {\n  position: relative;\n}\n.date {\n  margin-left: 55px;\n}\n.glycemie {\n  position: absolute;\n  color: #333;\n  left: 0;\n  top: 50%;\n  margin-top: -19px;\n  line-height: 38px;\n  text-align: center;\n  font-size: 12px;\n  display: block;\n  height: 38px;\n  width: 38px;\n  border-radius: 50%;\n}\n.sugar-hypo {\n  background: #4FC3F7;\n}\n.sugar-normal {\n  background: #9CCC65;\n}\n.sugar-warning {\n  background: #FFC107;\n}\n.sugar-hyper {\n  background: #E57373;\n}\n", ""]);
 
 	// exports
 
@@ -12517,11 +12517,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_moment2.default.locale('fr'); // <style>
-	// .mealslist {
-	//   margin: 30px;
-	//   background: #455A64;
-	//   padding: 10px
-	// }
 	//  h2 {
 	//    color: #fff;
 	//    font-size: 16px;

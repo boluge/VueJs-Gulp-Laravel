@@ -1,9 +1,4 @@
 <style>
-.mealslist {
-  margin: 30px;
-  background: #455A64;
-  padding: 10px
-}
  h2 {
    color: #fff;
    font-size: 16px;

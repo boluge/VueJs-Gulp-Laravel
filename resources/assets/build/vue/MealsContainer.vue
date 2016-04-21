@@ -1,7 +1,7 @@
 <style>
 .mealslist {
-  margin: 30px;
-  background: #607D8B;
+  margin: 10px 30px;
+  background: #455A64;
   padding: 5px 15px;
   border-radius: 6px;
   color: #fff;
