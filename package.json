@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/boluge/VueJs-Gulp-Laravel/issues"
   },
-  "homepage": "https://github.com/boluge/VueJs-Gulp-Laravel#readme"
+  "homepage": "https://github.com/boluge/VueJs-Gulp-Laravel#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
