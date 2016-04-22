@@ -11794,7 +11794,7 @@
 	};
 	// </script>
 	// <template>
-	//   <div class="mealslist" v-for="meal in meals">
+	//   <div class="meal-item" v-for="meal in meals">
 	//     <meal v-bind:name="meal.name" v-bind:sugar="meal.blood_sugar" v-bind:created="meal.created_at"></meal>
 	//   </div>
 	//   <!--<p>{{meals | json 2}}</p>-->
@@ -11847,11 +11847,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_moment2.default.locale('fr'); // <template>
-	//   <div class="meal">
-	//     <span class="glycemie {{class}}">{{sugar}}</span>
-	//     <h2>{{name}}</h2>
-	//     <p class="date">Le {{creation}}</p>
-	//   </div>
+	//     <span class="meal-item-glycemie {{class}}">{{sugar}}</span>
+	//     <h2 class="meal-item-title">{{name}}</h2>
+	//     <p class="meal-item-date">Le {{creation}}</p>
 	// </template>
 	//
 	// <script>
@@ -25679,13 +25677,13 @@
 /* 135 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"meal\">\n  <span class=\"glycemie {{class}}\">{{sugar}}</span>\n  <h2>{{name}}</h2>\n  <p class=\"date\">Le {{creation}}</p>\n</div>\n";
+	module.exports = "\n<span class=\"meal-item-glycemie {{class}}\">{{sugar}}</span>\n<h2 class=\"meal-item-title\">{{name}}</h2>\n<p class=\"meal-item-date\">Le {{creation}}</p>\n";
 
 /***/ },
 /* 136 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"mealslist\" v-for=\"meal in meals\">\n  <meal v-bind:name=\"meal.name\" v-bind:sugar=\"meal.blood_sugar\" v-bind:created=\"meal.created_at\"></meal>\n</div>\n<!--<p>{{meals | json 2}}</p>-->\n";
+	module.exports = "\n<div class=\"meal-item\" v-for=\"meal in meals\">\n  <meal v-bind:name=\"meal.name\" v-bind:sugar=\"meal.blood_sugar\" v-bind:created=\"meal.created_at\"></meal>\n</div>\n<!--<p>{{meals | json 2}}</p>-->\n";
 
 /***/ }
 /******/ ]);

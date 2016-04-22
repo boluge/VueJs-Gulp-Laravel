@@ -1,9 +1,7 @@
 <template>
-  <div class="meal">
-    <span class="glycemie {{class}}">{{sugar}}</span>
-    <h2>{{name}}</h2>
-    <p class="date">Le {{creation}}</p>
-  </div>
+    <span class="meal-item-glycemie {{class}}">{{sugar}}</span>
+    <h2 class="meal-item-title">{{name}}</h2>
+    <p class="meal-item-date">Le {{creation}}</p>
 </template>
 
 <script>

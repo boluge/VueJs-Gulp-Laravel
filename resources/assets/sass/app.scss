@@ -1,11 +1,17 @@
 @import "./node_modules/normalize.css/normalize.css";
 
 //--- Variables ---
-$navigation: 18%;
+$w-navigation: 18%;
+$w-slider: 50% - $w-navigation;
+$w-container: 100% - ($w-slider + $w-navigation);
 
 //--- General ---
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -23,7 +29,7 @@ body {
 //--- Navigation ---
 .navigation {
   height: 100%;
-  width: $navigation;
+  width: $w-navigation;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,31 +42,120 @@ body {
   width: 100%;
   display: block;
   img {
-    margin: 25px auto;
+    margin: 30px auto 30px;
     display: block;
     width: 90px;
     height: auto;
+  }
+  &:after {
+    content: '';
+    height: 1px;
+    background: #ccc;
+    width: 20%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+
+.navigation-mainmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-mainmenu-item {
+  line-height: 42px;
+  & a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      background: #eee;
+      color: #333;
+    }
   }
 }
 
 //--- Slider ---
 .slider {
   background: #eee;
-  background-image: url(../img/pexels-photo.jpg);
+  background-image: url(../img/muesli.jpg);
+  //background-image: url(../img/bread-healthy-white-cooking.jpg);
+  //filter: sepia(100%);
+  //blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin:0;
   padding:0;
   height: 100%;
-  width: 55% - $navigation;
+  width: $w-slider;
   position:fixed;
   top: 0;
   bottom: 0;
-  left: $navigation;
+  left: $w-navigation;
   z-index: -1;
 }
 
 .container {
+  position:fixed;
+  padding: 0 20px;
+  height: 100%;
+  width: $w-container;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(#fff, 0.8);
+  //filter: blur(1px);
+  overflow-x: auto;
+}
 
+//--- Meal ---
+.meal-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.meal-item-glycemie {
+  background: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.7rem;
+  &.sugar-hypo {
+    background: #2196f3;
+  }
+  &.sugar-normal {
+    background: #8bc34a;
+  }
+  &.sugar-warning {
+    background: #ffc107;
+  }
+  &.sugar-hyper {
+    background: #f44336;
+  }
+}
+
+.meal-item-title {
+  display: inline-block;
+  line-height: 36px;
+  font-weight: 600;
+  margin: 0 0 0 15px;
+  padding: 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.meal-item-date {
+  float: right;
+  color: #999;
+  font-weight: 200;
+  font-size: .82rem;
 }
