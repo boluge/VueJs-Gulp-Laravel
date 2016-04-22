@@ -11,7 +11,7 @@ var path = require('path');
 var fs = require('fs');
 
 // Run webpack
-gulp.task('webpack', ['lint'], function(){
+gulp.task('webpack', function(){
   return gulp.src('./resources/assets/build/**.**')
     .pipe(webpack( require('./webpack.config.js') ))
     .pipe(gulp.dest('./public/js'))
@@ -65,4 +65,4 @@ gulp.task('serve', function() {
 });
 
 // Default task
-gulp.task('default', ['webpack', 'uglify', 'serve']);
+gulp.task('default', ['webpack', /*'uglify',*/ 'serve']);
