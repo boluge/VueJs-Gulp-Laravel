@@ -1,10 +1,66 @@
-@import "./node_modules/normalize.scss/normalize.scss";
+@import "./node_modules/normalize.css/normalize.css";
 
-body {
-  background: #999;
+//--- Variables ---
+$navigation: 18%;
+
+//--- General ---
+* {
+  box-sizing: border-box;
 }
 
-.meal {
-  border-bottom: 1px solid #fff;
-  margin-bottom: 20px;
+html {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background: #fff;
+  height: 100%;
+  font-size: 14px;
+}
+
+//--- Navigation ---
+.navigation {
+  height: 100%;
+  width: $navigation;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+.navigation-logo {
+  width: 100%;
+  display: block;
+  img {
+    margin: 25px auto;
+    display: block;
+    width: 90px;
+    height: auto;
+  }
+}
+
+//--- Slider ---
+.slider {
+  background: #eee;
+  background-image: url(../img/background7.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 55% - $navigation;
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: $navigation;
+  z-index: -1;
+}
+
+.container {
+
 }

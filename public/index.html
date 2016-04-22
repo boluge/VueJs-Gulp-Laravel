@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Vue.js Gulp config for Laravel</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <mealscontainer json="json/meals.json"></mealscontainer>
+  <div class="navigation">
+    <a href="#" class="navigation-logo">
+      <img src="img/glucide.svg" alt="Glucide">
+    </a>
+    <ul class="navigation-mainmenu">
+      <li class="navigation-mainmenu-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="navigation-mainmenu-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="navigation-mainmenu-item">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slider">
+    Site Slider
+  </div>
+
+  <div class="container">
+      <mealscontainer json="json/meals.json"></mealscontainer>
+  </div>
+
   <script src="js/app.js"></script>
 </body>
 </html>

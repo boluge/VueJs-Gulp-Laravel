@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var webpack = require('webpack-stream');
 var browserSync = require('browser-sync').create();
 var batch = require('gulp-batch');
+var sass = require('gulp-sass');
+var please = require('gulp-pleeease');
 var connect = require('gulp-connect');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -10,12 +12,49 @@ var reporter = require('eslint-html-reporter');
 var path = require('path');
 var fs = require('fs');
 
+var SassOptions = {
+    errLogToConsole: true,
+    includePaths: require('node-normalize-scss').includePaths
+};
+
+var PleeeaseOptions = {
+	sourcemaps: false,
+	filters: true,
+	rem: ['14px'],
+	pseudoElements: true,
+	removeAllComments: true,
+	opacity: true,
+	minifier: true,
+    mqpacker: true,
+	autoprefixer: {
+		browsers: [
+         'ie >= 9',
+         'ie_mob >= 10',
+         'ff >= 30',
+         'chrome >= 34',
+         'safari >= 7',
+         'opera >= 23',
+         'ios >= 7',
+         'android >= 4.4',
+         'bb >= 10'
+      ]
+	}
+};
+
 // Run webpack
 gulp.task('webpack', function(){
   return gulp.src('./resources/assets/build/**.**')
     .pipe(webpack( require('./webpack.config.js') ))
     .pipe(gulp.dest('./public/js'))
     .pipe(connect.reload());
+});
+
+gulp.task('sass', function () {
+    gulp.src('./resources/assets/sass/app.scss')
+        .pipe( sass( SassOptions ))
+        .on( "error", function( e ) { console.error( e ); })
+        .pipe( please( PleeeaseOptions ) )
+        .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('lint', function () {
@@ -61,6 +100,7 @@ gulp.task('serve', function() {
     });
 
     gulp.watch("public/js/app.js", ['webpack']);
+    gulp.watch("resources/assets/sass/**/*.scss", ['sass']);
     gulp.watch(['public/**/*.*']).on('change', browserSync.reload);
 });
 
