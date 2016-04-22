@@ -60,7 +60,7 @@ gulp.task('serve', function() {
         server: "./public"
     });
 
-    gulp.watch("public/js/app.js", ['lint', 'uglify']);
+    gulp.watch("public/js/app.js", ['webpack']);
     gulp.watch(['public/**/*.*']).on('change', browserSync.reload);
 });
 

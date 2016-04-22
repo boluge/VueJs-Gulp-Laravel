@@ -11,6 +11,3 @@ new Vue({
     mealscontainer: MealsContainer
   }
 })
-
-/*eslint-disable no-unused-vars */
-import scss from '../sass/app.scss'
