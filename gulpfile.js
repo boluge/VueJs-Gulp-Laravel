@@ -13,8 +13,7 @@ var path = require('path');
 var fs = require('fs');
 
 var SassOptions = {
-    errLogToConsole: true,
-    includePaths: require('node-normalize-scss').includePaths
+    errLogToConsole: true
 };
 
 var PleeeaseOptions = {
